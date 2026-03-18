@@ -5,7 +5,7 @@ const stats = [
   { value: "9+", label: "Clients" },
   { value: "94%", label: "Conversion increase" },
   { value: "36+", label: "Months of work" },
-  { value: "7+", label: "Industries" },
+  { value: "2+", label: "Industries" },
   { value: "2+", label: "Years of experience" },
 ];
 
