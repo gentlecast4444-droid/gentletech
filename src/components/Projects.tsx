@@ -19,6 +19,8 @@ const projects: ProjectItem[] = [
   { title: "Video Project 2", videoId: "1YyMBf5PTlmTiweBIY8t0LqVRyFze6CHx" },
   { title: "Video Project 3", videoId: "1hq2-GY5UNfrO0n9-cC5-_2G-k-97-phZ" },
   { title: "Video Project 4", videoId: "19iNkxvpeHzxV0fL0BpcjLLDzLnn_zXJ2" },
+  { title: "Video Project 5", videoId: "1PdDwqzW83T6D9tH-JTpmfFWxgdaat1tz" },
+  { title: "Video Project 6", videoId: "1TZsHMDC3EH04y1134fAgec9fyqgyToUL" },
 ];
 
 const Projects = () => {
