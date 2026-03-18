@@ -1,21 +1,12 @@
 import { motion } from "framer-motion";
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
-import project4 from "@/assets/project-4.jpg";
 
 type ProjectItem = {
   title: string;
-  image?: string;
-  videoId?: string;
+  videoId: string;
 };
 
 const projects: ProjectItem[] = [
-  { title: "Teenage Engineering", image: project1 },
-  { title: "Figure", image: project2 },
   { title: "Video Project", videoId: "1eyKhSEvaC-QCgMHDgJWVpTpNVU1StL6w" },
-  { title: "Rivian", image: project3 },
-  { title: "Nothing", image: project4 },
   { title: "Video Project 2", videoId: "1YyMBf5PTlmTiweBIY8t0LqVRyFze6CHx" },
   { title: "Video Project 3", videoId: "1hq2-GY5UNfrO0n9-cC5-_2G-k-97-phZ" },
   { title: "Video Project 4", videoId: "19iNkxvpeHzxV0fL0BpcjLLDzLnn_zXJ2" },
