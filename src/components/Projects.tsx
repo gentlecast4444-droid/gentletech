@@ -4,9 +4,16 @@ import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
 import project4 from "@/assets/project-4.jpg";
 
-const projects = [
+type ProjectItem = {
+  title: string;
+  image?: string;
+  videoId?: string;
+};
+
+const projects: ProjectItem[] = [
   { title: "Teenage Engineering", image: project1 },
   { title: "Figure", image: project2 },
+  { title: "Video Project", videoId: "1eyKhSEvaC-QCgMHDgJWVpTpNVU1StL6w" },
   { title: "Rivian", image: project3 },
   { title: "Nothing", image: project4 },
 ];
@@ -25,15 +32,27 @@ const Projects = () => {
             className="group relative overflow-hidden rounded-xl cursor-pointer"
           >
             <div className="aspect-[4/3] overflow-hidden rounded-xl">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
+              {project.videoId ? (
+                <iframe
+                  src={`https://drive.google.com/file/d/${project.videoId}/preview`}
+                  className="w-full h-full"
+                  allow="autoplay"
+                  allowFullScreen
+                  title={project.title}
+                />
+              ) : (
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              )}
             </div>
-            <div className="absolute inset-0 flex items-end p-6 bg-gradient-to-t from-background/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl">
-              <h3 className="text-xl font-semibold text-foreground">{project.title}</h3>
-            </div>
+            {!project.videoId && (
+              <div className="absolute inset-0 flex items-end p-6 bg-gradient-to-t from-background/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl">
+                <h3 className="text-xl font-semibold text-foreground">{project.title}</h3>
+              </div>
+            )}
           </motion.div>
         ))}
       </div>
