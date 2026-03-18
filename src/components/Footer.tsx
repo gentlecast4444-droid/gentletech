@@ -29,11 +29,11 @@ const Footer = () => {
           transition={{ delay: 0.2, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
           className="flex gap-3 justify-center"
         >
-          <a href="mailto:hello@gentle.dev" className="px-6 py-3 bg-secondary text-foreground text-sm font-medium rounded-lg hover:bg-accent transition-colors">
-            Book a call
+          <a href="mailto:gentlecast4444@gmail.com" className="px-6 py-3 bg-secondary text-foreground text-sm font-medium rounded-lg hover:bg-accent transition-colors">
+            Send an email
           </a>
-          <a href="mailto:hello@gentle.dev" className="px-6 py-3 bg-secondary text-foreground text-sm font-medium rounded-lg hover:bg-accent transition-colors">
-            Send a text
+          <a href="https://discord.com/users/gentle__tech" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-secondary text-foreground text-sm font-medium rounded-lg hover:bg-accent transition-colors">
+            Discord: gentle__tech
           </a>
         </motion.div>
       </div>

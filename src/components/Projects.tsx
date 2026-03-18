@@ -62,7 +62,7 @@ const Projects = () => {
         ))}
       </div>
       <div className="text-center mt-12">
-        <a href="#work" className="text-sm text-muted-foreground hover:text-foreground transition-colors underline underline-offset-4">
+        <a href="https://drive.google.com/drive/folders/1GLrUF-clWgFxpsoefoZqKMZWgIuYfmqJ?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors underline underline-offset-4">
           See all projects
         </a>
       </div>
