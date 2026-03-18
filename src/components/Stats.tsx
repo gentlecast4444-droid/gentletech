@@ -6,7 +6,7 @@ const stats = [
   { value: "94%", label: "Conversion increase" },
   { value: "36+", label: "Months of work" },
   { value: "7+", label: "Industries" },
-  { value: "4+", label: "Years of experience" },
+  { value: "2+", label: "Years of experience" },
 ];
 
 const Stats = () => {
