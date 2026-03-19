@@ -20,7 +20,7 @@ const Footer = () => {
           transition={{ delay: 0.1 }}
           className="text-muted-foreground mb-8"
         >
-          Have a project in mind? Let's create something remarkable.
+          Have a video project in mind? Let's make it look incredible.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
