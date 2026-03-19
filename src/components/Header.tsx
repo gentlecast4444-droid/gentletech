@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 const navItems = [
   { label: "Home", href: "#hero" },
@@ -8,8 +8,31 @@ const navItems = [
   { label: "Contact", href: "#contact" },
 ];
 
+const sectionIds = navItems.map((item) => item.href.slice(1));
+
 const Header = () => {
   const [active, setActive] = useState("Home");
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            const match = navItems.find((item) => item.href === `#${entry.target.id}`);
+            if (match) setActive(match.label);
+          }
+        }
+      },
+      { rootMargin: "-40% 0px -55% 0px" }
+    );
+
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-center py-4 px-6">
@@ -19,7 +42,7 @@ const Header = () => {
             key={item.label}
             href={item.href}
             onClick={() => setActive(item.label)}
-            className={`relative px-4 py-2 text-sm font-medium transition-colors rounded-md ${
+            className={`relative px-4 py-2 text-sm font-medium transition-colors duration-300 rounded-md ${
               active === item.label
                 ? "text-primary-foreground"
                 : "text-muted-foreground hover:text-foreground"
