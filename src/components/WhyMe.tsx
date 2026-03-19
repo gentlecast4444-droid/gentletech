@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
 const reasons = [
-  { title: "Fast", description: "I focus on delivering fast results, without compromising on quality." },
-  { title: "Custom", description: "I emphasize creating unique designs, ensuring your brand stands out." },
-  { title: "Effective", description: "I make sure the website not only looks great but brings real-life results for your business." },
+  { title: "Fast", description: "Quick turnaround on edits without compromising on quality." },
+  { title: "Creative", description: "Unique edits and effects that make your videos stand out from the crowd." },
+  { title: "Effective", description: "Videos that grab attention, boost engagement, and deliver real results." },
 ];
 
 const WhyMe = () => {

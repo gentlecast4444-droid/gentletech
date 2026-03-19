@@ -1,15 +1,12 @@
 import { motion } from "framer-motion";
 
 const steps = [
-  { num: "01", title: "Discovery", desc: "Understand you and your business. What's your vision and future goals?" },
-  { num: "02", title: "Research", desc: "Analyze your industry, competitors, and local market." },
-  { num: "03", title: "Strategy", desc: "Develop a strategic plan to help you reach your goals." },
-  { num: "04", title: "Content", desc: "Show the right things to your audience." },
-  { num: "05", title: "Copywriting", desc: "Refine your message down to the exact wording." },
-  { num: "06", title: "Design", desc: "Strengthen your message through the visual language." },
-  { num: "07", title: "Development", desc: "Transform the design into a fully functional website." },
-  { num: "08", title: "Handover", desc: "Walk you through all features and functionality." },
-  { num: "09", title: "Support", desc: "Provide post-launch assistance and updates." },
+  { num: "01", title: "Brief", desc: "Understand your vision, style preferences, and project goals." },
+  { num: "02", title: "Footage Review", desc: "Go through all raw footage and select the best clips." },
+  { num: "03", title: "Rough Cut", desc: "Assemble the timeline with structure, pacing, and flow." },
+  { num: "04", title: "Editing", desc: "Add transitions, effects, color grading, and sound design." },
+  { num: "05", title: "Revisions", desc: "Refine the edit based on your feedback until it's perfect." },
+  { num: "06", title: "Delivery", desc: "Export in your preferred format and resolution, ready to publish." },
 ];
 
 const Workflow = () => {
