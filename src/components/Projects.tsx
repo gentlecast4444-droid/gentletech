@@ -21,18 +21,20 @@ const Projects = () => {
         {projects.map((project, i) => (
           <motion.div
             key={project.title}
-            initial={{ opacity: 0, y: 60 }}
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.7, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="group relative overflow-hidden rounded-xl cursor-pointer"
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.6, delay: i * 0.08, ease: [0.25, 1, 0.5, 1] }}
+            className="group relative overflow-hidden rounded-xl"
+            style={{ willChange: "transform, opacity" }}
           >
-            <div className="aspect-video overflow-hidden rounded-xl">
+            <div className="aspect-video overflow-hidden rounded-xl bg-secondary">
               <iframe
                 src={`https://drive.google.com/file/d/${project.videoId}/preview`}
                 className="w-full h-full"
                 allow="autoplay"
                 allowFullScreen
+                loading="lazy"
                 title={project.title}
               />
             </div>
@@ -40,7 +42,7 @@ const Projects = () => {
         ))}
       </div>
       <div className="text-center mt-12">
-        <a href="https://drive.google.com/drive/folders/1GLrUF-clWgFxpsoefoZqKMZWgIuYfmqJ?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors underline underline-offset-4">
+        <a href="https://drive.google.com/drive/folders/1GLrUF-clWgFxpsoefoZqKMZWgIuYfmqJ?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 underline underline-offset-4">
           See all projects
         </a>
       </div>
