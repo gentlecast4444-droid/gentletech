@@ -18,7 +18,7 @@ const Index = () => {
       <Services />
       <WhyMe />
       <Workflow />
-      <FAQ />
+      
       <Footer />
     </div>
   );

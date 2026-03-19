@@ -27,7 +27,7 @@ const Projects = () => {
             transition={{ duration: 0.7, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
             className="group relative overflow-hidden rounded-xl cursor-pointer"
           >
-            <div className="aspect-[4/3] overflow-hidden rounded-xl">
+            <div className="aspect-video overflow-hidden rounded-xl">
               <iframe
                 src={`https://drive.google.com/file/d/${project.videoId}/preview`}
                 className="w-full h-full"
