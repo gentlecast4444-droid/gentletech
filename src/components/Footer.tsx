@@ -20,7 +20,7 @@ const Footer = () => {
           transition={{ delay: 0.1 }}
           className="text-muted-foreground mb-8"
         >
-          Have a project in mind? Let's create something remarkable.
+          Have a video project in mind? Let's make it look incredible.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -40,9 +40,9 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto mt-20 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
         <span className="text-sm text-muted-foreground">© 2024 Gentle. All rights reserved.</span>
         <div className="flex gap-6">
+          <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">YouTube</a>
+          <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Instagram</a>
           <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Twitter</a>
-          <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">LinkedIn</a>
-          <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Dribbble</a>
         </div>
       </div>
     </footer>
