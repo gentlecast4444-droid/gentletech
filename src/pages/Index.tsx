@@ -5,7 +5,7 @@ import Stats from "@/components/Stats";
 import Services from "@/components/Services";
 import WhyMe from "@/components/WhyMe";
 import Workflow from "@/components/Workflow";
-import FAQ from "@/components/FAQ";
+
 import Footer from "@/components/Footer";
 
 const Index = () => {
