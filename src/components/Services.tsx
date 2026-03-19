@@ -20,7 +20,7 @@ const Services = () => {
           transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           className="text-muted-foreground text-lg leading-relaxed mb-10"
         >
-          Design and develop an entire website — from first ideas to global launch. You'll receive the complete package.
+          Make your video high-quality & engaging.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
