@@ -29,7 +29,7 @@ const Services = () => {
           transition={{ duration: 0.6, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="flex gap-3 justify-center"
         >
-          <a href="#contact" className="px-6 py-3 bg-secondary text-foreground text-sm font-medium rounded-lg hover:bg-accent transition-colors">
+          <a href="#contact" className="px-6 py-3 rgb-breathe text-white text-sm font-medium rounded-lg transition-all">
             Book a call
           </a>
           <a href="#contact" className="px-6 py-3 bg-secondary text-foreground text-sm font-medium rounded-lg hover:bg-accent transition-colors">

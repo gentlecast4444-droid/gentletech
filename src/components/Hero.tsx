@@ -22,7 +22,7 @@ const Hero = () => {
       >
         <a
           href="#contact"
-          className="px-6 py-3 bg-secondary text-foreground text-sm font-medium rounded-lg hover:bg-accent transition-colors duration-300"
+          className="px-6 py-3 rgb-breathe text-white text-sm font-medium rounded-lg transition-all duration-300"
         >
           Book a call
         </a>
