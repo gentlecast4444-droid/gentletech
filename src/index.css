@@ -83,4 +83,36 @@
     );
     background-size: calc(100% / 8) 100%;
   }
+
+  .rgb-breathe {
+    animation: rgb-breathe 14s ease-in-out infinite;
+  }
+
+  .rgb-breathe:hover {
+    filter: brightness(1.2);
+  }
+
+  .rgb-breathe-text {
+    animation: rgb-breathe-text 14s ease-in-out infinite;
+  }
+}
+
+@keyframes rgb-breathe {
+  0%, 100% { background-color: hsl(0, 70%, 55%); }
+  14% { background-color: hsl(30, 70%, 55%); }
+  28% { background-color: hsl(55, 70%, 50%); }
+  42% { background-color: hsl(140, 55%, 45%); }
+  57% { background-color: hsl(185, 60%, 45%); }
+  71% { background-color: hsl(230, 60%, 55%); }
+  85% { background-color: hsl(280, 55%, 55%); }
+}
+
+@keyframes rgb-breathe-text {
+  0%, 100% { color: hsl(0, 70%, 60%); }
+  14% { color: hsl(30, 70%, 60%); }
+  28% { color: hsl(55, 70%, 55%); }
+  42% { color: hsl(140, 55%, 50%); }
+  57% { color: hsl(185, 60%, 50%); }
+  71% { color: hsl(230, 60%, 60%); }
+  85% { color: hsl(280, 55%, 60%); }
 }
