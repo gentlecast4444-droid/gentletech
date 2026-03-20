@@ -62,7 +62,7 @@
     text-rendering: optimizeLegibility;
   }
 
-  h1, h2 {
+  h1, h2, h3, h4, h5, h6, p, a, span, li, label, div {
     animation: rgb-breathe-text 14s ease-in-out infinite;
   }
 
