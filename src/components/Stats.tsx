@@ -40,7 +40,7 @@ const Stats = () => {
       >
         {stats.map((stat) => (
           <motion.div key={stat.label} variants={item} className="text-center">
-            <div className="text-4xl md:text-5xl font-bold text-foreground mb-2">{stat.value}</div>
+            <div className="text-4xl md:text-5xl font-bold rgb-breathe-text mb-2">{stat.value}</div>
             <div className="text-sm text-muted-foreground">{stat.label}</div>
           </motion.div>
         ))}
